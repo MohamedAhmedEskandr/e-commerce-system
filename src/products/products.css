@@ -1,0 +1,351 @@
+body, h1, h2, h3, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #1a1a1a; 
+    color: #e0e0e0; 
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+header {
+    background-color: #222;
+    padding: 20px 0;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li button {
+    background-color: #333;
+    color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li button:hover {
+    background-color: #444;
+}
+
+nav ul li span {
+    color: #e0e0e0;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.newcontainer {
+    background: linear-gradient(to right, #2b2b2b, #1a1a1a); 
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.newcontainer nav {
+    background-color: #1a1a1a; 
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.newcontainer nav ul {
+    justify-content: space-around;
+}
+
+.newcontainer nav ul li button {
+    background-color: #333;
+    color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.newcontainer nav ul li button:hover {
+    background-color: #444;
+}
+
+.container, .newcontainer {
+    background: linear-gradient(to right, #2b2b2b, #1a1a1a); /* Gradient dark background */
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+p {
+    font-size: 18px;
+    color: #e0e0e0;
+    margin-bottom: 20px;
+    padding: 10px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+h2, h3 {
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+#home p {
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: justify;
+}
+
+.show {
+    position: relative;
+    width: 80%;
+    margin: 100px auto 0;
+    overflow: hidden;
+}
+
+.slider-content {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slider-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
+    border-radius: 50px;
+}
+
+.slider-arrow {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+}
+
+#prevBtn {
+    left: 10px;
+}
+
+#nextBtn {
+    right: 10px;
+}
+
+.products {
+    background-color: #333;
+    margin: 100px 0;
+    text-align: center;
+    border-radius: 35%;
+    border: 5px solid #e0e0e0;
+    padding: 20px;
+}
+
+.h1 {
+    background-color: #222;
+    color: #e0e0e0;
+    font-size: 35px;
+    line-height: 1.6;
+    padding: 10px;
+    font-weight: bold;
+    font-style: italic;
+    width: 30%;
+    margin: 0 auto 30px;
+    border-radius: 50px;
+}
+
+.product-item {
+    display: inline-block;
+    width: 20%;
+    margin: 10px;
+    vertical-align: top;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.product-item img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 100px;
+}
+
+.product-item h3 {
+    margin-top: 10px;
+}
+
+#home, #about, #contact {
+    background: linear-gradient(to bottom, #2b2b2b, #1a1a1a); /* Gradient dark background */
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 80px;
+}
+
+#about, #contact {
+    text-align: center;
+    max-height: 210px;
+}
+
+#circularButton {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.kits {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.kit-item {
+    display: inline-block;
+    width: 30%;
+    margin: 10px;
+    text-align: center;
+    border: 1px solid #444;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #1a1a1a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.kit-item img {
+    width: 100%;
+    border-radius: 10px;
+    max-height: 150px;
+}
+
+.kit-item p {
+    color: #e0e0e0;
+    margin-top: 5px;
+}
+
+.kit-item button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.kit-item button:hover {
+    background-color: #45a049;
+}
+
+.detailed-view {
+    display: none;
+    background-color: #1a1a1a;
+    color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.detailed-view img {
+    width: 100%;
+    border-radius: 10px;
+    max-height: 300px;
+}
+
+.detailed-view p {
+    margin-top: 10px;
+}
+
+.detailed-view button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.detailed-view button:hover {
+    background-color: #45a049;
+}
+
+.Cart{
+    display: none;
+    background: linear-gradient(to right, #2b2b2b, #1a1a1a); /* Gradient dark background */
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.cart-item {
+    background-color: #444;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.cart-item img {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.cart-item h3 {
+    margin-top: 10px;
+    color: #e0e0e0;
+}
+
+.cart-item p {
+    color: #e0e0e0;
+}
+
+.cart-item button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.cart-item button:hover {
+    background-color: #45a049;
+}

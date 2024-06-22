@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <link rel="stylesheet" href="products.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><button onclick="OnClickHomeButton()">Home</button></li>
+                <li><button onclick="AboutButtonOnClick()">About</button></li>
+                <li><button onclick="OnClickContactButton()">Contact</button></li>
+                <li><span id="username"></span></li>
+                <li><span id="cartCounter">0</span> items</li> 
+                <li><button onclick="OnClickCart()">Cart</button></li>
+                <li><button id="logoutButton" onclick="OnClickLogOut()">Logout</button></li>
+            </ul>
+        </nav>
+        
+    </header>
+    <div class="container">
+        <div id="home">
+            <p>This is the E-Commerce site developed by Eng. Mohamed Ahmed to show some products of the best clubs in the world: Real Madrid in Madrid, Spain; Barcelona FC in Barcelona, Spain; Zamalek Sporting Club in Cairo, Egypt; El Ittihad in Alexandria, Egypt.</p>
+        </div>
+        <div class="show">
+            <div class="slider-content">
+                <img id="sliderImage" src="RealMadrid.jpg" alt="Description of image">
+            </div>
+            <button id="prevBtn" class="slider-arrow" onclick="showPreviousImage()">&#9664;</button>
+            <button id="nextBtn" class="slider-arrow" onclick="showNextImage()">&#9654;</button>
+        </div>
+        <div class="products">
+            <div class="h1">Our Products</div>
+            <div class="product-item" id="RealMadrid1" onclick="OnClickRealMadridImage()"><img src="RealMadrid1.jpg" alt="Real Madrid T-Shirts"><h3>Real Madrid T-Shirts</h3></div>
+            <div class="product-item" id="Barcelona1" onclick="OnClickBarcelonaImage()"><img src="Barcelona1.jfif" alt="Barcelona T-Shirts"><h3>Barcelona T-Shirts</h3></div>
+            <div class="product-item" id="Zamalek1" onclick="OnClickZamalekImage()"><img src="Zamalek1.jfif" alt="Zamalek T-Shirts"><h3>Zamalek T-Shirts</h3></div>
+            <div class="product-item" id="Elitthad1" onclick="OnClickElitthadImage()"><img src="Elitthad1.jfif" alt="El Ittihad T-Shirts"><h3>El Ittihad T-Shirts</h3></div>
+        </div>
+        <div class="contact_about">
+            <div id="about">
+                <h2>About</h2>
+                <p>EsCodex is a virtual software company with over 5+ years of experience in providing exceptional software development services. We fulfill clients' software needs by offering top-notch custom software solutions and flexible, highly-qualified talents dedicated to delivering excellence. This is the E-Commerce site to sell some products (T-Shirts, Shoes, Shorts, Sports Kits) of the best clubs in the world: Real Madrid in Madrid, Spain; Barcelona FC in Barcelona, Spain; Zamalek Sporting Club in Cairo, Egypt; El Ittihad in Alexandria, Egypt.</p>
+            </div>
+            <div id="contact">
+                <h2>Contact Us</h2>
+                <p>mohamedahmed27999@gmail.com</p>
+                <p>Bahry, Alexandria, Egypt</p>
+                <p>(+002)1206206953</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="newcontainer" id="newcontainer" style="display: none;">
+        <nav>
+            <ul>
+                <li><button onclick="loadCategory('RealMadrid')">RealMadrid Kits</button></li>
+                <li><button onclick="loadCategory('Barcelona')">Barcelona Kits</button></li>
+                <li><button onclick="loadCategory('Zamalek')">Zamalek Kits</button></li>
+                <li><button onclick="loadCategory('Elitthad')">Elitthad Kits</button></li>
+            </ul>
+        </nav>
+        <div class="kits" id="kits"></div>
+    </div>
+    <div class="detailed-view" id="detailedView"></div>
+    <div class="Cart" id="Cart"></div>
+    <button id="circularButton" onclick="OnClickupbutton()">&#8593;</button>
+    <script src="products.js"></script>
+</body>
+</html>
